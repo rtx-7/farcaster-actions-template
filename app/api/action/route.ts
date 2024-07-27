@@ -18,7 +18,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 	// Format them as a string
 	const dateTime = `${date} ${time} UTC`;
 
-	return NextResponse.json({ message: dateTime }, { status: 200 });
+	return NextResponse.json({ message: getcast() }, { status: 200 });
 }
 
 export async function POST(req: NextRequest): Promise<Response> {
